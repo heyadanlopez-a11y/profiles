@@ -1,1 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Risk Assessment: Private GenAI Tools in the Business</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1e1e1e;
+      --accent: #007acc;
+      --font-sans: 'Inter', 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'Fira Mono', monospace;
+      --card-bg: #f5f7fa;
+      --border-color: #e1e4e8;
+      --shadow: rgba(0,0,0,0.05);
+      --radius: 6px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Mono&display=swap');
 
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 16px;
+      letter-spacing: -0.012em;
+    }
+    header {
+      background: transparent;
+      color: var(--text);
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      box-shadow: 0 4px 8px var(--shadow);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      margin: 0.3rem 0 0 0;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--text);
+    }
+    header p {
+      margin: 0.2rem 0 1rem 0;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555;
+      letter-spacing: 0.05em;
+    }
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: var(--card-bg);
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+    section h2 {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #444; /* toned-down dark gray */
+      border: none;
+      padding-bottom: 0;
+    }
+    p, ul, ol {
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-top: 0;
+    }
+    ul, ol {
+      list-style: disc;
+      padding-left: 1.4rem;
+      color: var(--text);
+    }
+    ul li, ol li {
+      margin-bottom: 0.6rem;
+      padding-left: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px var(--shadow);
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: text-decoration 0.2s ease;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid var(--border-color);
+      font-family: var(--font-mono);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+    }
+    th, td {
+        border: 1px solid var(--border-color);
+        padding: 0.6rem;
+        text-align: left;
+    }
+    th {
+        background-color: #e9ecef;
+        font-weight: 600;
+        color: var(--text);
+    }
+    /* Simple list styling for inline table-like content */
+    .table-list {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+    .table-list li {
+        margin-bottom: 0;
+        padding: 0.4rem 0;
+        border-bottom: 1px dashed #ced4da;
+    }
+    .table-list li:last-child {
+        border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="pic-profile1.jpg" alt="Profile Picture Placeholder">
+  <h1>Understanding Risks Associated with Introduction of Private GenAI Tools in the Business</h1>
+  <p>Cybersecurity | Risk Assessment | Generative AI</p>
+</header>
+<main>
+  <section>
+    <h2>1. Introduction</h2>
+    <p>
+      Organizations are eager to gain competitive advantage from
+      AI tools, driven by promises of efficiency, automation, and new business insights
+      from data. AI is increasingly seen as a way of reducing costs, accelerating
+      decision-making, improving customer experience, and unlocking new revenue
+      streams. This creates strong incentives to deploy AI quickly, often ahead of
+      establishing mature security practices.
+    </p>
+    <p>
+      Generative AI introduces new, unpredictable risks to businesses, particularly those on the
+      “bleeding edge” of AI adoption. News stories are slowly increasing of sensitive
+      data leaks, intellectual property loss, and legal exposure from offensive or
+      harmful AI output. Meanwhile, the risks from unsanctioned use of public chatbots,
+      **“Shadow AI”** are already here and will only get worse if the business fails to
+      provide managed AI tools to discourage use of uncontrolled applications.
+    </p>
+    <p>
+      Rapid deployment of enterprise AI comes with its own risks. Therefore, an **incremental approach**,
+      starting with isolated AI tools with limited access to data is strongly
+      encouraged, and is the primary focus of this assessment.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Scope: Private AI tools with tight guard rails and specific use cases</h2>
+    <p>
+      This assessment explores **private AI models restricted to internal employees and strictly controlled data access**.
+      It considers relatively safe uses like email, document processing, and
+      knowledgebase queries while avoiding the higher risks of public or autonomous AI.
+    </p>
+    <h3>AI scenarios considered in this assessment:</h3>
+    <ul>
+      <li>AI “assistant” built into Office applications to help draft documents or emails or generate formulas in Excel (i.e. Microsoft Copilot).</li>
+      <li>AI-Powered Search & Summarization: Private AI chatbot connected to internal knowledgebases such as customer history, QMS and SOP document libraries, IT support knowledgebase, or HR information libraries. ChatGPT Enterprise and Microsoft Copilot Studio are popular examples. (**RAG AI**)</li>
+      <li>Scheduling, Notes, and Transcription: Tools like MS Teams transcription offers efficiencies in notetaking, capturing action items, and searching meeting conversations.</li>
+      <li>Other use cases where public access or sensitive data is not required to make use of the model.</li>
+      <li>AI restricted from taking actions or committing changes (always a “human in the loop”).</li>
+    </ul>
+    <h3>Scenarios not considered:</h3>
+    <ul>
+      <li>Use of unmanaged, publicly available AI models (**“Shadow AI”**)</li>
+      <li>Private AI models with unrestricted access to the internet, network, or data</li>
+      <li>External threats from attackers using “AI enhanced” techniques against company defenses</li>
+      <li>Autonomous forms of AI, such as AI “agents” or “Agentic AI”, are outside the scope of this assessment, particularly if given access to perform actions independently without human oversight.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Executive Summary (Risk Score: MODERATE)</h2>
+    <p>
+      This section provides a high-level takeaway for business leadership. Please review the “Scope” section for proper context of the types of AI tools assessed.
+    </p>
+    <p>
+      The purpose of this assessment is to inform company leaders, who may be considering AI adoption, but want a general awareness of the types of risks involved before initiating a more thorough assessment specific to their business. This report is not intended to be an exhaustive report of all AI-related risks, but rather a general idea of risks likely to arise given a specific, limited set of use cases (see “Scope” section). Investment decisions or detailed mitigation plans may require further due diligence.
+    </p>
+    <p>
+      The highest risk items are listed below. All other threats were scored ‘Low’ risk (see “Risk Analysis” section). It’s important to note that the risk scores assume that reasonable and appropriate measures are taken to prevent major cyber-attacks, unauthorized access, or leakage of sensitive or controlled data (see “Risk Mitigation” section).
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Risk/Threat</th>
+                <th>Recommendation</th>
+                <th>Risk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lawsuits & HR Issues: Employee litigation from exposure to unlawful, offensive or harmful output.</td>
+                <td>Consider investing in third party solutions to apply strong guardrails and content validation/filtering between the AI and the user.</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>Supply Chain Attacks & Vulnerabilities: Supply chain attacks are a top threat broadly. AI models must receive updates from vendor update services. Attackers are beginning to target update services to and using them to deliver payloads and gain entry.</td>
+                <td>Watch this area closely.</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>AI-based Phishing Attack: AI models are subject to phishing methods, such as “poisoning” the training data or putting a prompt injection in the body of an email. This opens new pathways for network breach.</td>
+                <td>(See Risk Mitigation Section)</td>
+                <td>Moderate</td>
+            </tr>
+        </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>4. Context and Assumptions</h2>
+    <ul>
+      <li>**Existing risk of shadow AI:** It is assumed that users are already accessing public AI models, creating potential exposure risks for sensitive data and intellectual property. The organization should assess the risk of shadow AI separately, and implement mitigations.</li>
+      <li>**Unique Challenges:** Securing AI presents distinct challenges because AI operates non-deterministically, frequently **hallucinates**, and traditional boundaries between data and application layers are gone. Models cannot be fully audited or code-reviewed like standard software, making it difficult to identify vulnerabilities or detect **prompt injection** attacks.</li>
+      <li>**Attacks versus Accidents:** **Accidents** arise from human error, misconfigured models, or unpredictable behavior. **Attacks** are deliberate exploits like data poisoning or prompt injection.</li>
+      <li>**AI attack sophistication:** Sophisticated attacks on AI are not commonly reported as of this assessment. This assessment assumes that it will take some time for threat actors to develop advanced AI techniques.</li>
+      <li>**Lack of AI-specific expertise:** Internal IT staff lack AI-specific training or experience, which is factored into this risk assessment.</li>
+      <li>**Costs:** For broadest application with minimal risk of sensitive data leakage, consider Minimum classification to lowest access user. Costs may include additional tooling (security, DLP) and increased existing practices (penetration testing, monitoring).</li>
+    </ul>
+    <p>
+      *(Additional considerations mentioned: CMMC, GDPR, ITAR, EU AI act, Zero trust)*
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Risk Analysis / 6. Assessment Scale</h2>
+    <p>
+      Simplified version of NIST Special Publication 800-30 “Guide for Conducting Risk Assessments.”
+    </p>
+    <img src="airisk_analysis_table.png" alt="Risk Analysis Table Placeholder">
+  </section>
+
+  <section>
+    <h2>7. Risk Mitigation Considerations</h2>
+    <p>
+      The following recommendations are presented as a menu of options. They are not a universal checklist; the relevance of each measure depends on business context, risk appetite, and regulatory obligations.
+    </p>
+    <ol>
+      <li>**Slow Incremental Adoption:** Begin with personal internal AI tools that do not access sensitive information, gradually expanding capability once risks are managed and controls validated.</li>
+      <li>**Enterprise buy-in and messaging:** Leadership at each business unit must be aware of the risks and receive direction from corporate regarding safe adoption.</li>
+      <li>**Shared Responsibility**</li>
+      <li>**Consider waiting on AI in email applications:** Email poses an elevated risk due to its direct exposure to emails from outside the organization, allowing for **“prompt injection”** attacks. If waiting is not an option, proceed with appropriate safeguards and consider outside expertise.</li>
+      <li>**Update IR/DRP Plan:** Incident response procedures need slight changes to address AI risks, especially increased **supply chain risk**. Test these plans.</li>
+      <li>**Guard Rails and Input/Output Filtering:** Put technical and policy boundaries in place that limit what AI systems can do. Screen what goes into and comes out of the AI system to block malicious prompts, sensitive data (using **DLP**), or unsafe content.</li>
+      <li>**AI User Training and Risk Awareness:** Train employees on safe use of AI, encouraging a **“trust but verify”** approach. Update company employee and Acceptable Use Policies.</li>
+      <li>**Change Control of Training Data:** Careful management is necessary.</li>
+      <li>**AI-specific IT Training:** This is perhaps the most critical. Equip IT and security teams with specialized skills to configure, monitor, and secure AI systems. Training should include adversarial testing and monitoring for **model drift**.</li>
+      <li>**Zero Trust and Existing Security Frameworks:** Integrate AI tools, enforce **least-privilege**, require MFA, log model interactions, and continuously validate user sessions.</li>
+      <li>**Restricting AI Access to Data:** Enforce strict controls using data classification, fine-grained access policies, and careful separation of training vs. production data sets. **The risk of AI implementation is directly proportionate to the data it can access.**</li>
+      <li>**Limited Autonomy:** Implement **human-in-the-loop** review for sensitive actions and restrict AI decision-making in high-stakes areas.</li>
+      <li>**Model Monitoring & Drift Detection:** Continuously monitor AI outputs for anomalies, bias, or performance degradation.</li>
+      <li>**Red Teaming & Adversarial Testing:** Conduct regular red-team exercises focused on AI, including prompt injection, model extraction, and data poisoning attempts.</li>
+      <li>**Data Provenance & Lineage Tracking:** Track the origin, quality, and handling of data used for AI.</li>
+      <li>**Third-Party & Supply Chain Assurance:** Vet external AI services, APIs, and pre-trained models for security and compliance. Require vendors to provide documentation.</li>
+      <li>**Logging & Audit Trails for AI Interactions:** Maintain detailed logs of prompts, outputs, and administrative actions to support investigations and audits.</li>
+    </ol>
+  </section>
+  
+  <section>
+    <h2>8. Diagram of AI Implementation</h2>
+    <p>
+      The diagram illustrates the general architecture of the AI implementation assessed. The private AI chatbot application is firewalled from the internet and has strict access controls for who can login and run queries. The AI application is connected to various “Knowledgebases” including document folders, email, etc. The employee accesses the chatbot from the internal network and uses it for basic productivity tasks.
+    </p>
+    <img src="diagram_ai_implementation.png" alt="Diagram of Private AI Implementation">
+  </section>
+
+  <section>
+    <h2>9. AI Threat Model Diagram</h2>
+    <p>
+      Diagram from The OWASP AI Exchange: “The below diagram puts the controls in the AI Exchange into groups and places these groups in the right lifecycle with the corresponding threats.”
+    </p>
+    <p><a href="https://owasp.org/www-project-ai-security-and-privacy-guide/">0. AI Security Overview – AI Exchange</a></p>
+    <img src="ai_threat_model_diagram.png" alt="OWASP AI Threat Model Diagram Placeholder">
+  </section>
+
+  <section>
+    <h2>10. Sources</h2>
+    <ul>
+      <li><a href="https://atlas.mitre.org/matrices/ATLAS">MITRE ATLAS</a> (Adversarial Threat Landscape for Artificial-Intelligence Systems)</li>
+      <li><a href="https://csrc.nist.gov/pubs/ai/1/0/final">NIST AI Risk Management Framework (AI RMF 1.0)</a></li>
+      <li><a href="https://csrc.nist.gov/pubs/ai/600/1/final">NIST Generative AI Profile (AI 600-1)</a></li>
+      <li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">OWASP Top 10 for Large Language Model Applications</a></li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>11. Third Party Attestation of AI Tools</h2>
+    <p>
+      The following approaches to validation and assessment of AI models are emerging and actively being developed by third party organizations.
+    </p>
+    <ul>
+      <li>Adversarial red teaming (e.g., Scale AI, Surge AI)</li>
+      <li>Bias and fairness auditing (e.g., Qualitest, Tata Consultancy Services)</li>
+      <li>Model performance and reliability testing (e.g., Cigniti Technologies, TestFort)</li>
+      <li>Human-in-the-loop model output validation (e.g., Labelbox, Maxim AI)</li>
+      <li>Supply chain and training data risk assessments (e.g., iMerit, QASource)</li>
+      <li>Continuous monitoring and post-deployment audits (e.g., BugRaptors)</li>
+      <li>Third-party security audits (e.g., ISO 27001, SOC 2 compliance)</li>
+      <li>Technical documentation and benchmark certifications (e.g., Galileo, LambdaTest)</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>12. CMMC, ITAR, GDPR Compliance Considerations</h2>
+    
+    <h3>12.1 CMMC</h3>
+    <p>
+      The following CMMC controls must be carefully considered if processing CUI data with AI and cannot be placed on a POA&M. The business should consider avoiding CUI data altogether unless absolutely necessary.
+    </p>
+    <ul class="table-list">
+      <li>**AC.L2-3.1.5** – Least Privilege</li>
+      <li>**AU.L2-3.3.1** – System Auditing</li>
+      <li>**AU.L2-3.3.2** – User Accountability</li>
+      <li>**CM.L2-3.4.6** – Least Functionality</li>
+      <li>**RA.L2-3.11.2** – Vulnerability Scan</li>
+      <li>**SI.L2-3.14.6** – Monitor Communications for Attacks</li>
+      <li>**SI.L2-3.14.7** – Identify Unauthorized Use</li>
+    </ul>
+    
+    <h3>12.2 GDPR</h3>
+    <p>
+      The following GDPR requirements are potentially problematic for PII processed within an AI model, as models are not easily auditable or amenable to data purging. The business should avoid using AI to process PII data unless the risks are well understood.
+    </p>
+    <ul>
+      <li>**Accuracy (Article 5(1)(d)):** Chatbot output could be inaccurate or misleading about individuals.</li>
+      <li>**Storage Limitation & Retention (Article 5(1)(e)):** PII could be retained longer than necessary in chat logs or model data.</li>
+      <li>**Integrity & Confidentiality (Article 5(1)(f), Article 32):** Risks include unauthorized access to logs, model inversion attacks, or improper access rights.</li>
+      <li>**Right to Rectification and Erasure (Articles 16–17):** PII embedded in training data can be extremely difficult to correct or delete.</li>
+      <li>**Accountability & Documentation (Article 5(2), Article 24):** It is difficult to demonstrate compliance without clear logging and access controls.</li>
+    </ul>
+    
+    <h3>12.3 ITAR</h3>
+    <p>
+      A GenAI chatbot handling ITAR-controlled data must be designed with strict safeguards to avoid unlawful “exports” (i.e., deemed exports if foreign persons access the system). Key risks include cloud hosting outside the U.S., uncontrolled retention of ITAR data in logs, and weak access controls.
+    </p>
+    <p>
+      To minimize risks, implement the chatbot within a **U.S.-only, ITAR-compliant environment**, enforce **U.S. person–only access**, and tightly control logging and model retraining to prevent data persistence. **The business should consider avoiding ITAR data entirely in AI models.**
+    </p>
+  </section>
+  
+  <section>
+    <h2>Contact</h2>
+    <p> 
+      📧 <a href="mailto:you@example.com">you@example.com</a><br>
+      🌐 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a><br>
+      📄 <a href="index.html">Back to Portfolio</a>
+    </p>
+  </section>
+</main>
+<footer>
+  © 2025 Cybersecurity Profile – GenAI Risk Assessment
+</footer>
+</body>
+</html>
