@@ -1,1 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adan Lopez – Risk Assessment: SAML Single Sign-On in Entra ID</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1e1e1e;
+      --accent: #007acc;
+      --font-sans: 'Inter', 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'Fira Mono', monospace;
+      --card-bg: #f5f7fa;
+      --border-color: #e1e4e8;
+      --shadow: rgba(0,0,0,0.05);
+      --radius: 6px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Mono&display=swap');
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 16px;
+      letter-spacing: -0.012em;
+    }
+    header {
+      background: transparent;
+      color: var(--text);
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      box-shadow: 0 4px 8px var(--shadow);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      margin: 0.3rem 0 0 0;
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: var(--text);
+    }
+    header p {
+      margin: 0.2rem 0 1rem 0;
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555;
+      letter-spacing: 0.05em;
+    }
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: var(--card-bg);
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+    section h2 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3rem;
+    }
+    p, ul {
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-top: 0;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.4rem;
+      color: var(--text);
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+      padding-left: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px var(--shadow);
+      margin-top: 10px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: text-decoration 0.2s ease;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid var(--border-color);
+      font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="pic-profile1.jpg" alt="Adan Lopez">
+  <h1>Adan Lopez</h1>
+  <p>Cybersecurity | Governance | Risk | CISSP</p>
+</header>
+<main>
+  <section>
+    <h2>Assessing Risk in Entra Single Sign-on using SAML</h2>
+    <p>
+      A brief exercise to assess the risks of creating an Enterprise App in your Entra 
+      tenant to enable SAML-based single sign-on to access your Security MSP's portal.
+    </p>
+  </section>
+  <section>
+    <h2>Scenario</h2>
+    <p>
+      You have a new MSP who will be providing various security services to your
+      organization like log management, EDR management, and vulnerability 
+      management. The MSP has a ticketing portal where you will submit tickets
+      for support when needed, and they are helping you to configure access to
+      the portal. The portal will be accessed using your normal company login and
+      password, by enabling SAML-based single sign-on between your Microsoft 
+      Entra tenant and the MSP’s Entra tenant. 
+    </p>
+    <p>
+      This risk assessment evaluates the security posture of the SAML Single Sign-On (SSO)
+      implementation using Microsoft Entra (Azure AD) Enterprise Application as the Identity
+      Provider (IdP) for access to the MSP portal. SAML SSO facilitates seamless and secure
+      authentication by federating identity between the client organization and the MSP, 
+      enabling users to leverage existing credentials without maintaining multiple passwords.
+    </p>
+  </section>
+  <section>
+    <h2>Assumptions</h2>
+    <ul>
+      <li>The MSP portal will host a ticketing system containing sensitive security data about the client environment, including incident reports, vulnerability details, and configuration information.</li>
+      <li>The ticketing system will be accessible only through the SAML SSO integration using Microsoft Entra Enterprise App as the Identity Provider.</li>
+      <li>Multi-factor authentication will be enabled on the IdP to enhance user verification.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Risk Analysis</h2>
+    <img src="risk_analysis_table.png" alt="Risk Analysis Table">
+  </section>
+  <section>
+    <h2>Risk Mitigation</h2>
+    <img src="risk_mitigation_table.png" alt="Risk Mitigation Table">
+  </section>
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      This risk assessment has examined the security implications of implementing SAML-based Single Sign-On using Microsoft Entra Enterprise Application for access to the MSP portal. 
+      The analysis highlights that while there are inherent risks—such as assertion replay attacks, unauthorized access, and data interception—these can be effectively mitigated through best practices 
+      including strict SAML configuration, use of multi-factor authentication, secure certificate management, and least privilege access control.
+    </p>
+    <p>
+      By adhering to these measures, the client organization can maintain a strong security posture, confidently leveraging SSO to facilitate seamless, secure access without compromising sensitive security data hosted in the MSP portal. Continuous monitoring and periodic reassessment will further ensure evolving threats are managed proactively.
+    </p>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <p> 
+      📧 <a href="mailto:you@example.com">you@example.com</a><br>
+      🌐 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a><br>
+      📄 <a href="index.html">Back to Portfolio</a>
+    </p>
+  </section>
+</main>
+<footer>
+  © 2025 Adan Lopez – Cybersecurity Profile
+</footer>
+</body>
+</html>
 
