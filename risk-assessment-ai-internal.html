@@ -188,8 +188,16 @@
   </section>
 
   <section>
+    <h2>Risk Analysis</h2>
+    <p>The following risks are identified and the likelihood, impact, and risk levels of each is scored according to the "Assessment Scale" section below. Each risk is described along with the basic rationale for the scores given. </p>
+    <img src="ai_risk_analysis.png" alt="Risk Analysis">
+  </section>
+  
+  <section>
     <h2>Assessment Scale</h2>
     <p>Simplified version of NIST Special Publication 800-30 “Guide for Conducting Risk Assessments.”</p>
+    <p>The risks are scored according to this assessment scale roughly based on NIST 800-30, which is intended for US defense. I simplified the scale a bit to suit the business. The "Sources" section links to some authoritative sources which provided the bases for mapping threats to the appropriate likelihood and impact. Scoring the risk of any given threat is very specific to the individual business, it's operating environment, and what it's dependencies are related to it's key business drivers. Definitely work closely with business managers to score the threats appropriately for your business.”</p>
+    <img src="ai_assessment_scale.png" alt="Assessment Scale">
   </section>
 
   <section>
@@ -217,8 +225,8 @@
 
   <section>
     <h2>Diagram of AI Implementation</h2>
-    <p>The diagram illustrates the general architecture of the AI implementation assessed. The private AI chatbot application is firewalled from the internet and has strict access controls for who can login and run queries. The AI application is connected to various “Knowledgebases” including document folders, email, etc. The employee accesses the chatbot from the internal network and uses it for basic productivity tasks.</p>
-    <img src="diagram_ai_implementation.png" alt="Diagram of AI Implementation">
+    <p>The diagram illustrates the general architecture of the AI implementation assessed. The private AI chatbot application is firewalled from the internet and has strict access controls for who can login and run queries. The AI application is connected to various “Knowledgebases” including document folders, email, etc. The employee accesses the chatbot from the internal network and uses it for basic productivity tasks. External users outside the organization are prevented from accessing the application.</p>
+    <img src="ai_architecture_diagram.png" alt="Diagram of AI Implementation">
   </section>
 
   <section>
@@ -226,7 +234,7 @@
     <p>Diagram from The OWASP AI Exchange: “The below diagram puts the controls in the AI Exchange into groups and places these groups in the right lifecycle with the corresponding threats.”<br>
     <a href="https://owaspai.org/docs/ai_security_overview/#ai-security-matrix">0. AI Security Overview – AI Exchange</a>
     </p>
-    <img src="owasp_ai_threat_model.png" alt="AI Threat Model Diagram">
+    <img src="ai_threat_model.png" alt="AI Threat Model Diagram">
   </section>
 
   <section>
