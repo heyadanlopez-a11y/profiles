@@ -169,7 +169,17 @@
         </ul>
       </li>
     </ul>
-    </main>
+
+------------------------END TEMPLATE--------------------------------------------------------------
+
+    <h2>Contact</h2>
+    <p> 
+      📧 <a href="mailto:heyadanlopez@gmail.com">heyadanlopez@gmail.com</a><br>
+      🌐 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a><br>
+      📄 <a href="cyber.html">Back to Portfolio</a>
+    </p>
+  </section>
+</main>
 <footer>
   © 2025 Adan Lopez – Cybersecurity Profile
 </footer>
