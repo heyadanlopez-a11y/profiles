@@ -144,7 +144,7 @@
     <p>
       TEXT_HERE
     </p>
-    <img src="ai_architecture_diagram.png" alt="Diagram of AI Implementation">
+    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
   </section>
 
   <section>
@@ -158,17 +158,8 @@
           <li>BULLET_TEXT_HERE.</li>
         </ul>
       </li>
-    <img src="ai_architecture_diagram.png" alt="Diagram of AI Implementation">
-       <p>
-      <p>Scenarios not considered in this assessment:</p>
-        <ul>
-          <li>Use of unmanaged, publicly available AI models (“Shadow AI”)</li>
-          <li>Private AI models with unrestricted access to the internet, network, or data</li>
-          <li>External threats from attackers using “AI enhanced” techniques against company defenses</li>
-          <li>Autonomous forms of AI, such as AI “agents” or “Agentic AI”, are outside the scope of this assessment, particularly if given access to perform actions independently without human oversight.</li>
-        </ul>
-      </li>
-    </ul>
+    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
+  </section>
 
 ------------------------END TEMPLATE--------------------------------------------------------------
 
