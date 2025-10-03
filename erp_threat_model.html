@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NEW_TITLE_HERE</title>
+  <title>ERP Threat Modeling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
@@ -131,30 +131,31 @@
 <main>
 
 
------------------------------------------------------------TEMPLATE-----------------------------------------------
   <section>
-  <h2>NEW_TITLE_HERE</h2>
+  <h1>A Threat Modeling Exercise for a Cloud-Hosted ERP</h1>
         <p>
-  Here's a sample [TEXT_HERE], thought it migh be helpful for anyone getting started in cyber/GRC. 
-  <a href="FILE_NAME.docx">DOCUMENT_TITLE.docx</a>
- </p>
-    </section>
+The ERP (Enterprise Resource Planning) system is the crown jewel of an organization. It houses financial ledgers, trade secrets, and even sensitive data under regulatory control like Covered Defense Information and PII. 
+            <p>
+Here’s a Threat Modeling Exercise for those who are new to this type of activity and could use a real-world example. In this case, the ERP is hosted in a FedRAMP compliant cloud service using the SaaS model, so the ERP vendor takes care of most of the security controls, and the client does things like managing user accounts, roles, and application configuration.  </p>
+      </p>  
+  </section>
 
     <section>
-    <h2>FIRST_SECTION_HEADER</h2>
+    <h2>APPLICATION OVERVIEW</h2>
     <p>
       TEXT_HERE
     </p>
     <p>
-      TEXT_HERE
+       <img src="erp_table_application.png" alt="Application Overview">
     </p>
-    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
+ 
   </section>
 
   <section>
-    <h2>SECOND_SECTION_HEADER</h2>
+    <h2>IDENTITY AND ACCESS MANAGEMENT (IAM)</h2>
     <p>
-      TEXT_HERE
+      
+      <img src="erp_table_identity.png" alt="Identity and Access Management">
     </p>
         <ul>
           <li>BULLET_TEXT_HERE.</li>
@@ -165,6 +166,54 @@
     <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
   </section>
 
+      <section>
+    <h2>APPLICATION COMPONENTS AND DATA FLOW</h2>
+    <p>
+      <img src="erp_table_components.png" alt="Application Components">
+    </p>
+    <p>
+      TEXT_HERE
+    </p>
+    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
+  </section>
+
+      <section>
+    <h2>USER ROLES AND PRIVILEGES</h2>
+    <p>
+      TEXT_HERE
+    </p>
+    <p>
+            <img src="erp_table_roles.png" alt="User Roles and Privileges">
+
+    </p>
+    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
+  </section>
+
+      <section>
+    <h2>S.T.R.I.D.E ANALYSIS</h2>
+    <p>
+            <img src="erp_table_stride.png" alt="STRIDE Analysis">
+
+    </p>
+    <p>
+      TEXT_HERE
+    </p>
+    <img src="picture.png" alt="DESCRIPTION_OF_PICTURE">
+  </section>
+
+      <section>
+    <h2>DATA FLOW DIAGRAM</h2>
+    <p>
+      <img src="erp_diagram_dataflow.png" alt="Data Flow Diagram">
+    </p>
+    <p>
+Legend for the Data Flow Diagram
+            <img src="erp_diagram_legend.png" alt="Legend">
+            
+      <img src="erp_diagram_architecture.png" alt="Architecture Diagram">
+      <img src="erp_diagram_samlflow.png" alt="SAML Flow Diagram">
+    </p>
+    </section>
 ------------------------END TEMPLATE--------------------------------------------------------------
 
     <h2>Contact</h2>
