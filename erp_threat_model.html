@@ -212,6 +212,25 @@ Legend for the Data Flow Diagram
             
       <img src="erp_diagram_architecture.png" alt="Architecture Diagram">
       <img src="erp_diagram_samlflow.png" alt="SAML Flow Diagram">
+  <p>
+  <p>
+      Cybersecurity Organizations and Guide References
+Once you’re up to speed on the basic moving parts, take some time to touch on some common threats relevant to your scenario. If you can find something from OWASP, it’s almost like cheating, you’re basically copying answers from the smartest person in the class. Here’s the OWASP SAML Security Cheat Sheet for example, include any juicy ones into your STRIDE table that you maybe didn’t think of. They have great information about mitigation as well. 
+
+    </p>
+    </section>
+
+        <section>
+    <h2>CONCLUSION</h2>
+    <p>
+And that’s it! Now you hand this to your security operations team to start on those mitigations you identified or perhaps merge this analysis into a larger risk assessment to make a case for more security funding. 
+    </p>
+    <p>
+Now, obviously, the real work goes into that research and STRIDE analysis. There’s no shortcuts here, it takes time, research, and more research. For example, in this case the obvious boundary is SAML, so dig into the various vulnerabilities known about SAML and combine that with what you know about TTPs, and you should be on the right track. Sometimes it’s hard to know where to start. Hopefully the example references I provided will help you at least get the ball rolling. 
+
+  <p>
+  <p>
+So, for this exercise, I would focus first on the mitigations identified under “Spoofing”, and I would probably throw in real-time alerting in Azure Monitor every time an admin logs in, just because it’s free and sometimes setting trip wires is what saves our bacon. You may find other threats that are higher on your list, or you may decide that SAML is generally secure enough for now and you have bigger fish to fry, and that’s fine. Security is always a balancing act where you are gauging risks and constantly reassessing to make sure you are prioritizing the right things. 
     </p>
     </section>
 ------------------------END TEMPLATE--------------------------------------------------------------
