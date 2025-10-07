@@ -130,36 +130,185 @@
 </header>
 <main>
 
-
 <section>
-  <h2>Regular Security Audits: A Sample Checklist of Security Controls</h2>
-  <p>
-    Here's a sample auditing checklist and guidance, thought it might be helpful for anyone getting started in cyber/GRC.
+  <h2>Regular Security Audits: A Sample Checklist</h2>
+    <p>
+  Here's a sample **Checklist of Security Controls**, thought it might be helpful for anyone getting started in cyber/GRC.
+  <a href="Audit_Checklist_Template.docx">Sample Audit Checklist Template.docx</a>
   </p>
 </section>
 
 <section>
-  <h2>Introduction</h2>
-  <p>
-    An effective cybersecurity audit schedule is foundational for CMMC compliance and risk reduction. A solid continuous monitoring plan incorporates frequent and systematic reviews of controls such as access management, incident response, vulnerability remediation, backup integrity, and patch management. Selecting appropriate intervals is critical for providing assurance and detecting important events before they become major issues.
-  </p>
-  <p>
-    Try to align your audit schedule of critical controls with asset value, attack surface dynamics, historical incidents, and regulatory requirements. Highly critical systems or those exposed to novel threats may warrant increased review intervals.
-  </p>
+  <h2>Introduction: The Foundation of Continuous Monitoring</h2>
+    <p>
+  An effective cybersecurity audit schedule is foundational for **CMMC compliance** and risk reduction. A solid continuous monitoring plan incorporates frequent and systematic reviews of controls such as access management, incident response, vulnerability remediation, backup integrity, and patch management.
+    </p>
+    <p>
+  Selecting appropriate intervals is critical for providing assurance and detecting important events before they become major issues. Try to align your audit schedule of critical controls with **asset value**, **attack surface dynamics**, historical incidents, and regulatory requirements. Highly critical systems or those exposed to novel threats may warrant increased review intervals.
+    </p>
+    <img src="continuous_monitoring_diagram.png" alt="Diagram illustrating the continuous monitoring and audit cycle for security controls.">
 </section>
 
 <section>
-  <h2>Audit Frequency</h2>
-  <p>
-    Weekly audits should focus on highly dynamic, high-risk areas such as privileged user activity, remote access logs, vulnerability scan reviews, and incident response ticket closure. These activities enable early detection of security breaches or control lapses before they escalate.
-  </p>
-  <p>
-    Monthly audits are optimal for controls where trends and emerging risks can be detected over a slightly longer timeframe. This includes patch management validation, backup restoration tests, firewall reviews, and EASM/CSPM vulnerability reports. Monthly cadence ensures adequate visibility and time to address any findings between audits without producing excessive operational overhead.
-  </p>
-  <p>
-    Quarterly audits should be reserved for items with more
+  <h2>Optimal Audit Frequency</h2>
+    <p>
+  To maximize ROI and accelerate risk resolution, security audits should be strategically scheduled based on the control's volatility and risk profile.
+    </p>
+    <ul>
+      <li>**Weekly Audits:** Should focus on highly dynamic, high-risk areas such as **privileged user activity**, **remote access logs**, vulnerability scan reviews, and incident response ticket closure. These activities enable early detection of security breaches or control lapses before they escalate.</li>
+      <li>**Monthly Audits:** Are optimal for controls where trends and emerging risks can be detected over a slightly longer timeframe. This includes **patch management validation**, backup restoration tests, firewall reviews, and EASM/CSPM vulnerability reports. Monthly cadence ensures adequate visibility and time to address any findings between audits without producing excessive operational overhead.</li>
+      <li>**Quarterly Audits:** Should be reserved for items with more stable risk profiles, such as **dormant user account reviews**, inventory reconciliation, POA&M reviews, and manual wireless access scans. Quarterly review balances thoroughness with practicality where change is less frequent.</li>
+    </ul>
+    <img src="audit_frequency_chart.png" alt="A chart showing recommended weekly, monthly, and quarterly audit schedules for various security controls.">
+</section>
 
+<section>
+  <h2>Sample Checklist Items & CMMC Alignment</h2>
+    <p>
+  Your checklist doesn’t have to be complicated—in fact, the simpler the better. It should give you a simple way to log your activities, track any resulting findings and action items, and regenerate a new checklist each time without hassle. The following items include suggestions and alignment to CMMC L2 controls.
+    </p>
+    
+    <h3>Remote Access Logs (AC.L2-3.1.12)</h3>
+    <ul>
+      <li>**Importance:** Detects misuse or unauthorized remote connections, a common cyberattack vector.</li>
+      <li>**CMMC Alignment:** Shows oversight and monitoring required for remote access control and anomaly detection.</li>
+      <li>**Suggestions:** Extract VPN/RDP logs; test alerting for unusual geolocations, times, or devices; cross-check logs with termination or revocation lists.</li>
+    </ul>
 
+    <h3>VPN MFA (IA.L2-3.5.3.2)</h3>
+    <ul>
+      <li>**Importance:** MFA for VPNs prevents credential stuffing and unauthorized access even if passwords are compromised.</li>
+      <li>**CMMC Alignment:** Satisfies multi-factor authentication requirement for remote local and network access.</li>
+      <li>**Suggestions:** Check configuration for mandatory MFA for all VPN users; perform MFA test logins; ensure bypass is not allowed except in documented, approved scenarios.</li>
+    </ul>
+
+    <h3>Risky Users & Logins (SI.L2-3.14.7)</h3>
+    <ul>
+      <li>**Importance:** Identifies compromised accounts or risky behaviors to proactively block or remediate threats.</li>
+      <li>**CMMC Alignment:** Addresses requirements for monitoring user actions and flagging anomalies.</li>
+      <li>**Suggestions:** Review risk detection rules; check periodic reports for flagged high-risk users; confirm incident follow-up actions for detected risks.</li>
+    </ul>
+
+    <h3>MFA Temporary Access Pass (IA.L2-3.5.3.1)</h3>
+    <ul>
+      <li>**Importance:** Temporary access paths can defeat MFA if not controlled; risking backdoors for attackers.</li>
+      <li>**CMMC Alignment:** Proper controls on temporary bypasses for authentication underpin secure identity management.</li>
+      <li>**Suggestions:** Audit logs for creation/use of temporary passes; check approval process; verify time-limited and auto-expiry enforcement.</li>
+    </ul>
+    
+    <h3>iPhone Patches (CM.L2-3.4.1)</h3>
+    <ul>
+      <li>**Importance:** Mobile device vulnerabilities are rapidly exploited in active attacks.</li>
+      <li>**CMMC Alignment:** Satisfies requirements to keep all assets, including mobile, fully patched.</li>
+      <li>**Suggestions:** Pull status from MDM; random sample devices for patch version compliance; cross-check announced vulnerabilities vs. organizational patch state.</li>
+    </ul>
+
+    <h3>New Hire Training (AT.L2-3.2.1)</h3>
+    <ul>
+      <li>**Importance:** Ensures staff understand threats, policies, reporting, and secure behaviors from day one.</li>
+      <li>**CMMC Alignment:** Delivers on the requirement for regular and role-based security training.</li>
+      <li>**Suggestions:** Verify training logs for all new hires; review training content for CUI and DoD awareness; sample completion rates and quiz/test scores.</li>
+    </ul>
+
+    <h3>Audit Change Logs (CM.L2-3.4.3.1)</h3>
+    <ul>
+      <li>**Importance:** Tracks system and document changes for accountability, problem analysis, and rollback.</li>
+      <li>**CMMC Alignment:** Mandates auditing and review of configuration and system changes.</li>
+      <li>**Suggestions:** Review change logs for completeness and tamper evidence; sample change requests for proper documentation and approvals.</li>
+    </ul>
+    
+    <h3>EDR Gaps in Coverage (CA.L2-3.12.4, CA.L2-3.12.4.1)</h3>
+    <ul>
+      <li>**Importance:** Identifies holes in security posture, guides remediation, and supports operational resilience.</li>
+      <li>**CMMC Alignment:** Regular reviews and adjustments match the requirement for continuous assessment of controls effectiveness.</li>
+      <li>**Suggestions:** Review Secure Score dashboard; check regular reports for unresolved issues; document remediation performed or exception justifications.</li>
+    </ul>
+
+    <h3>Vulnerability Remediation (RA.L2-3.11.3)</h3>
+    <ul>
+      <li>**Importance:** Keeps systems secure by resolving known holes before attackers exploit them.</li>
+      <li>**CMMC Alignment:** Requires documented, timely action on identified vulnerabilities.</li>
+      <li>**Suggestions:** Review open/closed tickets in vulnerability management system; compare scan findings vs. patch deployments; verify closure deadlines and exception tracking.</li>
+    </ul>
+
+    <h3>CUI Access Review (SI.L2-3.14.7)</h3>
+    <ul>
+      <li>**Importance:** Minimizes risk of unauthorized data exposure or data loss incidents.</li>
+      <li>**CMMC Alignment:** Protects CUI by ensuring proper user access through regular review.</li>
+      <li>**Suggestions:** Pull and review access lists for CUI data repositories; validate permissions with data owners; log and track all updates/removals.</li>
+    </ul>
+
+    <h3>Rogue Wireless Access Points (AC.L2-3.1.18)</h3>
+    <ul>
+      <li>**Importance:** Prevents attackers from establishing unapproved network backdoors or eavesdropping points.</li>
+      <li>**CMMC Alignment:** Meets requirement for control of wireless access and monitoring.</li>
+      <li>**Suggestions:** Perform regular wireless scans; maintain an inventory of authorized APs; investigate any unknown devices and document outcomes.</li>
+    </ul>
+
+    <h3>Manual System Patches (SI.L2-3.14.1)</h3>
+    <ul>
+      <li>**Importance:** Ensures exceptions and manual interventions are just as robust as automated patching.</li>
+      <li>**CMMC Alignment:** Aligns with the requirement for documented and timely patch management, regardless of method.</li>
+      <li>**Suggestions:** Document manual patch approvals; review completed patch jobs; verify critical updates are prioritized.</li>
+    </ul>
+
+    <h3>POA&M (POA&M Management – RA.L2-3.11.2)</h3>
+    <ul>
+      <li>**Importance:** Provides structured process for remediating deficiencies, demonstrating ongoing maturing.</li>
+      <li>**CMMC Alignment:** Documents how control gaps are tracked, mitigated, and closed.</li>
+      <li>**Suggestions:** Maintain an up-to-date POA&M repository; verify closure/mitigation against evidence; ensure regular updates and management review.</li>
+    </ul>
+
+    <h3>Domain Admins Review (User Privileges)</h3>
+    <ul>
+      <li>**Importance:** Limits and audits high-risk privileged accounts which, if abused, enable catastrophic damage.</li>
+      <li>**CMMC Alignment:** Enforces least privilege for special and administrative accounts.</li>
+      <li>**Suggestions:** Review admin group membership; require dual sign-off for any changes; log privileged user actions.</li>
+    </ul>
+
+    <h3>Risk Log (RA.L2-3.11.1)</h3>
+    <ul>
+      <li>**Importance:** Flags and tracks organizational risks before they turn into incidents or nonconformities.</li>
+      <li>**CMMC Alignment:** Requires risk assessments to be regular, systematic, and actionable.</li>
+      <li>**Suggestions:** Sample risk log for currency; verify risk owners and mitigation status; ensure inclusion in leadership briefings.</li>
+    </ul>
+
+    <h3>External Vulnerabilities (Third-Party Monitoring) (RA.L2-3.11.3)</h3>
+    <ul>
+      <li>**Importance:** Provides external perspective on your attack surface and risk rankings using OSINT and telemetry.</li>
+      <li>**CMMC Alignment:** Can supplement existing vulnerability management controls with third-party, independent scans.</li>
+      <li>**Suggestions:** Review EASM monthly; document all critical findings and remediation steps; compare with internal scans for overlap/gaps.</li>
+    </ul>
+
+    <h3>Firewall Review (CA.L2-3.12.3)</h3>
+    <ul>
+      <li>**Importance:** Validates that inbound and outbound rules enforce security baseline and CUI requirements.</li>
+      <li>**CMMC Alignment:** Directly supports network boundary defense (SC family).</li>
+      <li>**Suggestions:** Export and check rules against change control tickets; test open/close rules for recency; check exception logs. Check firmware updates and support contract expiration.</li>
+    </ul>
+
+    <h3>Inactive Users (IA.L2-3.6.5.2)</h3>
+    <ul>
+      <li>**Importance:** Reduces attack surface by ensuring dormant accounts cannot be misused.</li>
+      <li>**CMMC Alignment:** Enforces timely removal or disabling of accounts no longer necessary.</li>
+      <li>**Suggestions:** Cross-check HR roster vs. directory permissions; automate de-provisioning scripts; sample logs for recent disables or deletions.</li>
+    </ul>
+
+    <h3>Inactive Computers / Asset Inventory (CM.L2-3.4.1)</h3>
+    <ul>
+      <li>**Importance:** Identifies shadow IT and ensures all devices in operation are tracked, secured, and patched.</li>
+      <li>**CMMC Alignment:** Satisfies asset management and inventory requirements.</li>
+      <li>**Suggestions:** Review endpoint manager and CMDB for device status; scan for unreported/rogue assets; validate asset records are up to date.</li>
+    </ul>
+
+    <h3>Test Backup Recovery (IR.L2-3.6.1)</h3>
+    <ul>
+      <li>**Importance:** Proves backup integrity and disaster recovery readiness through hands-on testing.</li>
+      <li>**CMMC Alignment:** Matches requirements for regularly testing incident response and restoration capability.</li>
+      <li>**Suggestions:** Document restore tests; simulate full and partial data recoveries; verify user/system access post-restore.</li>
+    </ul>
+
+</section>
     <h2>Contact</h2>
     <p> 
       📄 <a href="resume-grc.pdf">Resume</a>
